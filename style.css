@@ -35,3 +35,23 @@ img {
     width: 150px;
     object-fit: contain;
 }
+
+@media(max-width:768px) {
+    footer.container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 4rem;
+    }
+}
+@media(max-width: 375px) {
+    footer.container {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    button {
+        width: 83%;
+        padding: 0.5rem;
+    }
+}
